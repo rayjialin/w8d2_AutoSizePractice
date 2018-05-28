@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SizeClassPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AnySize" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzm-1n-rcL">
+                                <rect key="frame" x="129" y="229.5" width="62" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THird label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARS-al-wHL">
+                                <rect key="frame" x="118.5" y="319" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AO0-R9-Mmw">
+                                <rect key="frame" x="219" y="126" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AO0-R9-Mmw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TsQ-OA-udL"/>
+                            <constraint firstItem="qzm-1n-rcL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VZL-si-olb"/>
+                            <constraint firstItem="qzm-1n-rcL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ciL-hk-skS"/>
+                            <constraint firstItem="ARS-al-wHL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dfS-f9-OSa"/>
+                            <constraint firstItem="AO0-R9-Mmw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-23.5" id="tHY-AD-dDl"/>
+                            <constraint firstItem="ARS-al-wHL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zty-5C-iVn">
+                                <variation key="widthClass=compact" constant="89.5"/>
+                            </constraint>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ARS-al-wHL"/>
+                                <exclude reference="AO0-R9-Mmw"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="TsQ-OA-udL"/>
+                                <exclude reference="tHY-AD-dDl"/>
+                                <exclude reference="dfS-f9-OSa"/>
+                                <exclude reference="zty-5C-iVn"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="AO0-R9-Mmw"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="TsQ-OA-udL"/>
+                                <include reference="tHY-AD-dDl"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ARS-al-wHL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="dfS-f9-OSa"/>
+                                <include reference="zty-5C-iVn"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
